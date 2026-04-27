@@ -5,7 +5,7 @@ spring:
   application:
     name: aws-lab-backend
   datasource:
-    url: ${DB_URL:jdbc:mysql://localhost:3306/mydb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
+    url: ${DB_URL_info:jdbc:mysql://localhost:3306/mydb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
     username: ${DB_USERNAME:admin}
     password: ${DB_PASSWORD:admin}
     driver-class-name: com.mysql.cj.jdbc.Driver
