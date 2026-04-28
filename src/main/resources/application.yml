@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: aws-lab-backend
+
+cloud:
+  aws:
+    region: us-east-2
+
+
 #  datasource:
 #    url: ${DB_URL_info:jdbc:mysql://localhost:3306/mydb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
 #    username: ${DB_USERNAME:admin}
