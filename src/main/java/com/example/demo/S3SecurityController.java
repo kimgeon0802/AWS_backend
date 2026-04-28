@@ -41,7 +41,7 @@ public class S3SecurityController {
         // 서버 디스크에 저장하지 않고 입력 스트림에서 바로 S3로 전송
         s3Client.putObject(putObjectRequest,
                 RequestBody.fromInputStream(file.getInputStream(), file.getSize()));
-        System.out.println("BUCKET_NAME = [" + BUCKET_NAME + "]");
+
         return ResponseEntity.ok("업로드 성공: " + fileName);
     }
 
